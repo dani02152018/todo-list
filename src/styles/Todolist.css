@@ -1,0 +1,114 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url('../assets/cat.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Container */
+.todo-container {
+  width: 400px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.2);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 182, 193, 0.4);
+  color: #a83279; 
+}
+
+/* Heading */
+.todo-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Form */
+.todo-container form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.todo-container input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #f7c6d3;
+  border-radius: 10px;
+  outline-color: #ff69b4;
+  transition: border-color 0.3s ease;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.todo-container input[type="text"]:focus {
+  border-color: #ff1493;
+}
+
+/* Button */
+.todo-container button {
+  padding: 12px 18px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.todo-container button:hover {
+  background-color: #ff1493;
+}
+
+/* Todo list */
+.todo-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-container li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 12px 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.3);
+  font-size: 18px;
+  color: #cc297b;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.todo-container li:hover {
+  background-color: rgba(255, 224, 240, 0.6);
+}
+
+.todo-container li span {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.todo-container li.completed span {
+  text-decoration: line-through;
+  color: #d48cae;
+  font-style: italic;
+}
